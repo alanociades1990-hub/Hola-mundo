@@ -1,0 +1,16 @@
+# En main
+git checkout main
+echo 'print("Hola Mundo")' > hola_mundo.py
+git add hola_mundo.py
+git commit -m "Agregar programa Hola Mundo"
+git push origin main
+
+# En dev
+git checkout dev
+git cherry-pick main
+git push origin dev
+
+# En testing
+git checkout testing
+git cherry-pick main
+git push origin testing
